@@ -9,7 +9,6 @@ public class Fibonacci {
             c = a+b;
             System.out.print(c+" ");
             a = b;
-
             b = c;
         }
     }
