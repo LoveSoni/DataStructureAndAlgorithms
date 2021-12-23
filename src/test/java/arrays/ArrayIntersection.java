@@ -1,6 +1,6 @@
 package arrays;
 
-public class ArrayIntersaction {
+public class ArrayIntersection {
     /*
     {1,2,3}
     {3,4}
