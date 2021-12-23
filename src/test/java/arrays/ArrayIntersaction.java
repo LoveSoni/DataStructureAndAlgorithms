@@ -15,6 +15,7 @@ public class ArrayIntersaction {
                 if(firstArray[i] == secondArray[j]){
                     System.out.println(firstArray[i]);
                     secondArray[j] = Integer.MIN_VALUE;
+                    // i've added Min_Value so that now it should not be mapped with any other number
                 }
             }
         }
