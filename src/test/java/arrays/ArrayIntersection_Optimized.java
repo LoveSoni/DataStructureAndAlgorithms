@@ -1,6 +1,6 @@
 package arrays;
 
-public class ArrayIntersaction_Optimized {
+public class ArrayIntersection_Optimized {
     public static void main(String[] args) {
         int[] firstArray =  {1,2,3};
         int[] secondArray = {3,4};
