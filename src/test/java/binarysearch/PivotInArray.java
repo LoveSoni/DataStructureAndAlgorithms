@@ -1,2 +1,4 @@
-package binarysearch;public class PivotInArray {
+package binarysearch;
+
+public class PivotInArray {
 }
