@@ -10,6 +10,9 @@ public class RemoveAllOccurrenceOfSubString {
     public static void main(String[] args) {
         String string = "daabcbaabcbc";
         String subString = "abc";
-        System.out.println(string.replaceAll("abc",""));
+        while(string.contains("abc")){
+            string = string.replace("abc","");
+        }
+        System.out.println(string);
     }
 }
