@@ -24,4 +24,5 @@ public class RemoveAdjacentDuplicates {
         }
         return sb.toString().toCharArray();
     }
+
 }
