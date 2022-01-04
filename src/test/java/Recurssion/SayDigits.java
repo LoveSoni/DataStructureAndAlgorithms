@@ -6,6 +6,7 @@ public class SayDigits {
         four one two
      */
     static String numberMappings[] = {"zero","one","two","three","four","five","six","seven","eight","nine","ten"};
+
     public static void sayDigit(int number){
         if(number == 0){
             return;
@@ -15,6 +16,7 @@ public class SayDigits {
         sayDigit(number);
         System.out.print(numberMappings[digit]+" ");
     }
+
     public static void main(String[] args) {
         sayDigit(412);
     }
