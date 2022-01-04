@@ -30,18 +30,20 @@ public class ArraySortedOrNot {
 //        arraynew[i] = array[i+1];
 //    }
     // return isSorted(arrayNew); // and pass the new array}
-    public static boolean isSorted(){
-        return false;
+    public static boolean isSorted(int array[]){
+       if(array.length == 0 || array.length ==1){
+           return true;
+       }if(array[0]> array[1]){
+           return false;
+       }else{
+           int[] arrayNew = new int[array.length-1];
+            System.arraycopy(array, 1, arrayNew, 0, arrayNew.length);
+           return isSorted(arrayNew);
+        }
     }
 
     public static void main(String[] args) {
-        int[] array = {1,3,4,5,1};
-        int[] arraynew = new int[array.length-1];
-        for(int i=0;i<arraynew.length;i++){
-            arraynew[i] = array[i+1];
-        }
-        for(int c: arraynew){
-            System.out.print(c);
-        }
+        int[] array = {1,3,4,5,6};
+        System.out.println(isSorted(array));
     }
 }
