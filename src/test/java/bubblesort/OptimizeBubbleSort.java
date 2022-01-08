@@ -21,7 +21,7 @@ public class OptimizeBubbleSort {
                     res = true;
                 }
             }
-            if(res == false){
+            if(res == false){// already sorted
                 break;
             }
         }
