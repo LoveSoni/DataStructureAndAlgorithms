@@ -1,4 +1,4 @@
-package CharArraysOrString;
+package chararraysorstring;
 
 public class OccurrenceOfCharacter_AnotherWay {
     //occurrence of character without using map

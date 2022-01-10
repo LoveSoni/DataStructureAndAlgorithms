@@ -1,4 +1,4 @@
-package CharArraysOrString;
+package chararraysorstring;
 
 public class StringPalindrome {
     public static void main(String[] args) {

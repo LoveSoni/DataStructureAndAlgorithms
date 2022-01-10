@@ -1,4 +1,4 @@
-package Recurssion;
+package recurssion;
 
 public class ReverseCountingUsingHeadRecursion {
     public static void printCounting(int num){

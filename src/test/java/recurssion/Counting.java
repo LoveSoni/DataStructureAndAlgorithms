@@ -1,4 +1,4 @@
-package Recurssion;
+package recurssion;
 
 public class Counting {
     public static void printCounting(int num){

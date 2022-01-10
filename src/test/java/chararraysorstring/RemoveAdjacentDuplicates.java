@@ -1,4 +1,4 @@
-package CharArraysOrString;
+package chararraysorstring;
 
 
 public class RemoveAdjacentDuplicates {

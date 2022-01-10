@@ -1,4 +1,4 @@
-package Recurssion;
+package recurssion;
 
 public class SumOfArray {
     // find the sum of array using recursion

@@ -1,4 +1,4 @@
-package CharArraysOrString;
+package chararraysorstring;
 
 import java.util.HashMap;
 

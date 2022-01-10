@@ -1,4 +1,4 @@
-package Recurssion;
+package recurssion;
 
 public class CountWaysToReachNthStair {
     static int distinctWaysToClimbStair(int stairs){

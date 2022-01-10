@@ -1,4 +1,4 @@
-package Recurssion;
+package recurssion;
 
 public class ArraySortedOrNot {
     // An array is given we need to check whether it is sorted or not

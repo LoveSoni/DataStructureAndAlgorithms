@@ -1,4 +1,4 @@
-package CharArraysOrString;
+package chararraysorstring;
 
 public class StringToLowerCase {
     // e.g. we've the following string give
