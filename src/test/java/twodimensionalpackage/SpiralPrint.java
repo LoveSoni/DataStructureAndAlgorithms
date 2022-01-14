@@ -1,5 +1,8 @@
 package twodimensionalpackage;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SpiralPrint {
     /*
     Input:  1    2   3   4
@@ -10,34 +13,42 @@ public class SpiralPrint {
      */
     public static void main(String[] args) {
         int[][] a = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
-        int startRow = 0;
-        int startColumn = a[0].length - 1;
-        int endRow = a[0].length - 1;
-        int endColumn = 0;
-        //print starting row
-        for (int i = 0; i <=0; i++) {
-            for (int j = 0; j < a[0].length; j++) {
-                System.out.print(a[i][j]+"\t");
+        List<Integer> list = new ArrayList<>();
+        int numberOfRows = a.length;
+        int numberOfColumns = a[0].length;
+        int totalElements = numberOfColumns * numberOfRows;
+        int count = 0;
+        int startingRow = 0;
+        int startingColumn  =0;
+        int endingRow = numberOfRows-1;
+        int endingColumn = numberOfColumns -1;
+        while(count<totalElements){
+            // print starting row
+            for(int i=startingColumn;count<totalElements && i<endingColumn;i++){
+                list.add(a[startingRow][i]);
+                count++;
             }
-            System.out.println();
-        }
-        //print ending column
-        for(int i=0;i<a[0].length;i++){
-            for(int j=0;j<a.length;j++){
-                System.out.print(a[j][i]+"\t");
+            startingRow++;
+            // print starting column
+            for(int i=startingRow;count<totalElements && i<endingRow;i++){
+                list.add(a[i][endingColumn]);
+                count++;
             }
-            System.out.println();
+            endingColumn--;
+
+            //print ending row
+            for(int index=endingColumn; count<totalElements && index>=startingColumn;index--){
+                list.add(a[endingRow][index]);
+                count++;
+            }
+            endingRow--;
+
+            //print starting column
+            for(int index=endingRow;count<totalElements && index>=startingRow;index--){
+                list.add(a[index][startingColumn]);
+                count++;
+            }
+            startingColumn++;
         }
-//        for (int i = 0; i < a.length; i++) {
-//            for (int j = 0; j < a[0].length; j++) {
-//                System.out.print(a[i][j]);
-//            }
-//        }
-//        System.out.println();
-//        for (int i = 0; i < a.length; i++) {
-//            for (int j = a[0].length - 1; j >= 0; j--) {
-//                System.out.print(a[i][j]);
-//            }
-//        }
     }
 }
