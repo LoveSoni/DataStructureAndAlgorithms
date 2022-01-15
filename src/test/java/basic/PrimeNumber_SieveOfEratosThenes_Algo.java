@@ -15,6 +15,8 @@ public class PrimeNumber_SieveOfEratosThenes_Algo {
 
     }
 
+
+    // Complexity of this algo will be 0(n * log(log n) )
     public static boolean[] primeNumber(int number){
         boolean[] allNumbers = new boolean[number+1];
         // by default mark all number as prime i.e. true
