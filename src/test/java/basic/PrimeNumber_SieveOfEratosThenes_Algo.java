@@ -12,7 +12,6 @@ public class PrimeNumber_SieveOfEratosThenes_Algo {
               System.out.println(i);
           }
       }
-
     }
 
 
