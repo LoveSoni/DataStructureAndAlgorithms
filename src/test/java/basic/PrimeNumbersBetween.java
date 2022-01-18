@@ -10,6 +10,7 @@ public class PrimeNumbersBetween {
         }
     }
 
+
     public static boolean isPrime(int number) {
         boolean isPrime = false;
         for(int i=2;i<number;i++){
