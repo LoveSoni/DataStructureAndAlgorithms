@@ -1,7 +1,15 @@
 package leetcode.easy;
 
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
 
@@ -23,8 +31,5 @@ public class TwoSum {
 
     public static void main(String[] args) {
         int nums[] = {3, 2, 3};
-        int target = 6;
-        twoSum(nums, target);
-        System.out.println();
     }
 }
